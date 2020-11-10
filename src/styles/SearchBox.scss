@@ -1,0 +1,25 @@
+@import "colors.scss";
+@import "fonts.scss";
+
+.Container {
+  display: flex;
+  background-color: $lightGray;
+}
+
+.Input {
+  display: flex;
+  width: 50vw;
+  justify-content: flex-start;
+  align-content: flex-end;
+  padding: 5px;
+  border-style: none;
+  font-size: $smallSize;
+}
+
+.Icon {
+  width: 2rem;
+  align-self: center;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+}
