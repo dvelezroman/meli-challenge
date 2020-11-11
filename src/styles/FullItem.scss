@@ -24,8 +24,8 @@
 
 .Bottom {
   display: flex;
-  flex-grow: 1;
-  background-color: bisque;
+  flex-direction: column;
+  padding: 0.5rem;
 }
 
 .Full-Image {
@@ -37,4 +37,21 @@
 .Full-Data {
   display: flex;
   flex-grow: 1;
+}
+
+.Full-Item-Description {
+  font-size: 10px;
+  color: #A0A0A0;
+  text-align: justify;
+}
+
+.Bottom-Left {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.Bottom-Right {
+  display: flex;
+  width: 30%;
 }

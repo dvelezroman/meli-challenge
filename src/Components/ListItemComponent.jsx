@@ -7,7 +7,9 @@ import shippingLogo from '../assets/images/ic_shipping.png'
 
 const ListItemComponent = ({ item }) => {
   const history = useHistory()
-  const goToItemFullDescription = useCallback(() => {
+
+  const goToItemFullDescription = useCallback((e) => {
+    e.preventDefault()
     history.push(`/product/${item.id}`)
   }, [history, item])
 
