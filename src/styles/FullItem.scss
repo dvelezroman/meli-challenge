@@ -17,9 +17,7 @@
 
 .Top {
   display: flex;
-  flex-grow: 4;
   flex-direction: row;
-  background-color: aquamarine;
 }
 
 .Bottom {
@@ -30,13 +28,18 @@
 
 .Full-Image {
   display: flex;
-  flex-grow: 3;
-  background-color: red;
+  justify-content: center;
+  width: 70%;
+
+  .Product-Image {
+    width: 200px;
+    height: auto;
+  }
 }
 
 .Full-Data {
   display: flex;
-  flex-grow: 1;
+  flex-direction: column;
 }
 
 .Full-Item-Description {
@@ -54,4 +57,46 @@
 .Bottom-Right {
   display: flex;
   width: 30%;
+}
+
+.Item-Name {
+  margin-top: $sep16;
+  width: 10rem;
+  font-weight: 600;
+  text-align: left;
+  font-size: $mediumSize;
+}
+
+.Item-Price {
+  margin-top: $sep16;
+  width: auto;
+  flex-direction: row;
+  font-weight: 500;
+  text-align: justify;
+  font-size: $bigSize;
+  line-height: 40px;
+
+  .Decimals {
+    font-size: $mediumSize;
+    vertical-align: text-top;
+  }
+
+}
+
+.Item-Condition {
+  margin-top: $sep16;
+  width: 12rem;
+  font-weight: 400;
+  text-align: justify;
+  font-size: $tinySize;
+}
+
+.Item-Buy-Button {
+  border-style: none;
+  background-color: $blue;
+  margin-top: $sep32;
+  font-size: $smallSize;
+  color: $white;
+  padding: $sep12;
+  border-radius: 4px;
 }
