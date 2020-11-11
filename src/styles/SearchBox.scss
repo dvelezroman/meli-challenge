@@ -1,25 +1,30 @@
 @import "colors.scss";
 @import "fonts.scss";
 
-.Container {
+.Search-Container {
   display: flex;
   background-color: $lightGray;
+  width: 70vw;
 }
 
-.Input {
+.Search-Input {
   display: flex;
-  width: 50vw;
+  width: 100%;
   justify-content: flex-start;
   align-content: flex-end;
-  padding: 5px;
+  padding: 10px;
   border-style: none;
   font-size: $smallSize;
 }
 
-.Icon {
+.Search-Icon {
   width: 2rem;
   align-self: center;
   margin: 5px;
   width: 20px;
   height: 20px;
+}
+
+.Search-Button {
+  border-style: none;
 }

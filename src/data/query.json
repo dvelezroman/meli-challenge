@@ -1,0 +1,42 @@
+{
+  "data": {
+    "search": {
+      "author": {
+        "name": "Dario",
+        "lastName": "Velez"
+      },
+      "items": [
+        {
+          "id": "MLA896525720",
+          "title": "Nokia 2.3 32 Gb Cyan Green 2 Gb Ram",
+          "picture": "http://http2.mlstatic.com/D_821935-MLA42331360237_062020-I.jpg",
+          "condition": "new",
+          "freeShipping": null,
+          "price": {
+            "currency": "ARS",
+            "amount": 23900,
+            "decimals": 2
+          }
+        },
+          {
+            "id": "MLA896525721",
+            "title": "Nokia 2.3 32 Gb Cyan Green 2 Gb Ram",
+            "picture": "http://http2.mlstatic.com/D_821935-MLA42331360237_062020-I.jpg",
+            "condition": "new",
+            "freeShipping": null,
+            "price": {
+              "currency": "ARS",
+              "amount": 23900,
+              "decimals": 2
+            }
+          }
+      ],
+      "categories": [
+        {
+          "category": "MLA1055",
+          "domainId": "MLA-CELLPHONES"
+        }
+      ]
+    }
+  }
+}

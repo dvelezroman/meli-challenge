@@ -1,0 +1,27 @@
+@import "fonts.scss";
+@import "colors.scss";
+
+.Item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.Image {
+  display: flex;
+  flex-grow: 1;
+  background-color: $primaryColor;
+}
+
+.Description {
+  display: flex;
+  flex-grow: 2;
+  background-color: $lightGray;
+}
+
+.Location {
+  display: flex;
+  flex-grow: 1;
+  background-color: $primaryColor;
+}

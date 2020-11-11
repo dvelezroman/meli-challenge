@@ -2,10 +2,9 @@
 
 .App {
   display: flex;
-  text-align: center;
   flex-direction: column;
-  margin-left: 10px;
-  margin-right: 10px;
+  justify-content: center;
+  background-color: $lightGray;
 }
 
 .App-header {
@@ -18,13 +17,12 @@
   font-size: calc(10px + 2vmin);
   color: white;
   padding-top: 10px;
-  margin-bottom: 10px;
 }
 
 .App-body {
-  background-color: $lightGray;
   display: flex;
   height: 90vh;
+  padding-top: 1rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -33,6 +31,6 @@
 }
 
 .Meli-Logo {
-  margin: 1rem;
+  margin-right: 1rem;
   width: 3rem;
 }

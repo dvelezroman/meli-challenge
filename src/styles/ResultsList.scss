@@ -1,0 +1,10 @@
+@import "colors.scss";
+@import "fonts.scss";
+
+.Results-List-Container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 75vw;
+  background-color: $lightGray;
+}
