@@ -11,7 +11,7 @@
           "title": "Nokia 2.3 32 Gb Cyan Green 2 Gb Ram",
           "picture": "http://http2.mlstatic.com/D_821935-MLA42331360237_062020-I.jpg",
           "condition": "new",
-          "freeShipping": null,
+          "freeShipping": true,
           "price": {
             "currency": "ARS",
             "amount": 23900,
@@ -23,7 +23,7 @@
             "title": "Nokia 2.3 32 Gb Cyan Green 2 Gb Ram",
             "picture": "http://http2.mlstatic.com/D_821935-MLA42331360237_062020-I.jpg",
             "condition": "new",
-            "freeShipping": null,
+            "freeShipping": false,
             "price": {
               "currency": "ARS",
               "amount": 23900,

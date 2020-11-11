@@ -1,4 +1,5 @@
 @import "fonts.scss";
+@import "spaces.scss";
 @import "colors.scss";
 
 .Item {
@@ -6,22 +7,48 @@
   flex-direction: row;
   justify-content: space-around;
   align-content: center;
+  padding-top: $sep16;
+  padding-bottom: $sep16;
+  border-bottom-color: $lightGray;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
 }
 
 .Image {
   display: flex;
   flex-grow: 1;
-  background-color: $primaryColor;
+  width: 50px;
+  height: auto;
+  margin-left: $sep16;
+  margin-right: $sep16;
 }
 
 .Description {
   display: flex;
   flex-grow: 2;
-  background-color: $lightGray;
+  padding-bottom: $sep16;
+  padding-top: $sep16;
+  flex-direction: column;
+}
+
+.Amount {
+  margin-right: 1rem;
+  size: $mediumSize;
+}
+
+.Shipping-Logo {
+  width: 15px;
+  height: 15px;
 }
 
 .Location {
   display: flex;
+  padding-bottom: $sep16;
+  padding-top: $sep16;
   flex-grow: 1;
-  background-color: $primaryColor;
+}
+
+.Content {
+  size: $smallSize;
+  margin-top: $sep32;
 }

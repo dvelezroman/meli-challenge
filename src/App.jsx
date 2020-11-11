@@ -1,17 +1,34 @@
 import React from 'react'
-import './styles/App.scss'
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from 'react-router-dom'
+import FullItemDescription from './Components/FullItemDescription';
 import Header from './Components/Header';
 import ResultsList from './Screens/ResultsList';
 
+import './styles/App.scss'
+
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <div className="App-body">
-        <ResultsList />
+    <Router>
+      <div className="App">
+        <Header />
+        <div className="App-body">
+          <Switch>
+            <Route path="/search">
+              <ResultsList />
+            </Route>
+            <Route path="/item">
+              <FullItemDescription />
+            </Route>
+            <Redirect to="/search" />
+          </Switch>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 

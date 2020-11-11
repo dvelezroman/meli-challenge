@@ -1,8 +1,11 @@
 @import "fonts.scss";
 @import "colors.scss";
+@import "spaces.scss";
 
 .Breadcrumb-Container {
   display: flex;
+  margin-top: $sep16;
+  margin-bottom: $sep16;
   width: 100%;
   height: 2rem;
   justify-content: flex-start;
