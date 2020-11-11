@@ -1,0 +1,40 @@
+@import "fonts.scss";
+@import "spaces.scss";
+@import "colors.scss";
+
+.Full-Item-Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 75vw;
+  height: 100%;
+}
+
+.Description {
+  display: flex;
+  background-color: $white;
+}
+
+.Top {
+  display: flex;
+  flex-grow: 4;
+  flex-direction: row;
+  background-color: aquamarine;
+}
+
+.Bottom {
+  display: flex;
+  flex-grow: 1;
+  background-color: bisque;
+}
+
+.Full-Image {
+  display: flex;
+  flex-grow: 3;
+  background-color: red;
+}
+
+.Full-Data {
+  display: flex;
+  flex-grow: 1;
+}
