@@ -10,7 +10,7 @@ const ListItemComponent = ({ item }) => {
 
   const goToItemFullDescription = useCallback((e) => {
     e.preventDefault()
-    history.push(`/product/${item.id}`)
+    history.push(`/item?id=${item.id}`)
   }, [history, item])
 
   return (

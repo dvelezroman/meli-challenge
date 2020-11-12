@@ -6,7 +6,7 @@ const BreadCrumb = (props) => {
   return (
     <div className='Breadcrumb-Container'>
       {props.categories.map((category, i) => (
-        <Fragment key={category.domainId}>
+        <Fragment key={category.domainId + i}>
           <span className="Breadcrumb-Text">{category.domainId.split('-')[1]}</span>
           {i !== props.categories.length - 1 && <span className="Breadcrumb-Text">{">"}</span>}
         </Fragment>

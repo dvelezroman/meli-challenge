@@ -40,6 +40,7 @@
 .Full-Data {
   display: flex;
   flex-direction: column;
+  margin-left: $sep16;
 }
 
 .Full-Item-Description {
@@ -92,6 +93,8 @@
 }
 
 .Item-Buy-Button {
+  display: flex;
+  justify-content: center;
   border-style: none;
   background-color: $blue;
   margin-top: $sep32;

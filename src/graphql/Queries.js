@@ -32,3 +32,30 @@ export const SEARCH_QUERY = gql`
     }
   }
 `
+
+export const GET_ITEM = gql`
+  query GetItemQuery ($itemId: String!) {
+    getItem(name: "Dario", lastName: "Velez", itemId: $itemId) {
+      author {
+        name
+        lastName
+      }
+      item {
+        id
+        title
+        picture
+        condition
+        freeShipping
+        description
+        soldQuantity
+        permalink
+        categoryId
+        price {
+          currency
+          amount
+          decimals
+        }
+      }
+    }
+  }
+`
