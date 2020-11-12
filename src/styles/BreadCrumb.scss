@@ -4,6 +4,7 @@
 
 .Breadcrumb-Container {
   display: flex;
+  flex-wrap: wrap;
   margin-top: $sep16;
   margin-bottom: $sep16;
   width: 100%;
@@ -11,7 +12,7 @@
 }
 
 .Breadcrumb-Text {
-  font-size: $tinySize;
+  font-size: $nitSize;
   color: $black;
   margin-right: 5px;
 }

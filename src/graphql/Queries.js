@@ -1,13 +1,13 @@
 import gql from 'graphql-tag'
 
 export const SEARCH_QUERY = gql`
-  {
+  query SearchQuery($query: String!, $qty: Int!) {
     search(
       searchInputData: {
         name: "Dario"
         lastName: "Velez"
-        query: "celular"
-        qty: 1
+        query: $query
+        qty: $qty
       }) {
       author {
         name

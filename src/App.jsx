@@ -24,7 +24,7 @@ function App() {
             <Route path="/item">
               <FullItemDescription />
             </Route>
-            <Redirect to="/search" />
+            <Redirect to="/" />
           </Switch>
         </div>
       </div>
