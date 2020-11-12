@@ -51,7 +51,7 @@ const ResultsList = () => {
   return (
     <div className="Results-List-Container">
       <BreadCrumb categories={categories}/>
-      <List items={items} />
+      {items.length ? <List items={items} /> : <div>Sin Resultados...</div>}
     </div>
   )
 }

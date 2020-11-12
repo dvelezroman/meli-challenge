@@ -5,9 +5,11 @@ import {
   Route,
   Redirect
 } from 'react-router-dom'
-import FullItemDescription from './Components/FullItemDescription';
+
 import Header from './Components/Header';
+
 import ResultsList from './Screens/ResultsList';
+import FullItemDescription from './Screens/FullItemDescription';
 
 import './styles/App.scss'
 

@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef } from 'react'
+import React, { useCallback, useEffect, useMemo, useRef } from 'react'
 import "../styles/SearchBox.scss"
 import ImageComponent from './ImageComponent'
 
@@ -11,7 +11,9 @@ const SearchBox = () => {
 
   const goToSearchResultsList = useCallback((e) => {
     e.preventDefault()
-    history.push(`/search?query=${inputRef.current.value}`)
+    if (inputRef.current.value !== "") {
+      history.push(`/search?query=${inputRef.current.value}`)
+    }
   }, [history])
 
   const handleKeyPress = useCallback((event) => {
@@ -21,8 +23,8 @@ const SearchBox = () => {
   }, [goToSearchResultsList])
 
   useEffect(() => {
-    const inputListener = inputRef.current.addEventListener('keyup', handleKeyPress)
-    return () => inputListener.removeEventListener()
+    window.addEventListener('keyup', handleKeyPress)
+    return () => window.removeEventListener('keyup', handleKeyPress)
   },[goToSearchResultsList, handleKeyPress])
 
   return (

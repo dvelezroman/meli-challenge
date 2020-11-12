@@ -2,8 +2,8 @@ import React, { useEffect, useMemo, useState } from 'react'
 import { useLazyQuery } from '@apollo/react-hooks'
 import { useQuery, formatter } from '../utils'
 
-import ImageComponent from './ImageComponent'
-import BreadCrumb from './Breadcrumb'
+import ImageComponent from '../Components/ImageComponent'
+import BreadCrumb from '../Components/Breadcrumb'
 
 import { GET_ITEM } from '../graphql/Queries'
 
