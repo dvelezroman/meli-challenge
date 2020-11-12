@@ -36,7 +36,6 @@ const FullItemDescription = () => {
 
   useEffect(() => {
     const itemId = queryParams.get("id")
-    console.log({ itemId })
     setId(itemId)
   }, [queryParams])
 

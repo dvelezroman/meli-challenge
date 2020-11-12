@@ -21,7 +21,8 @@
     "react-scripts": "4.0.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "npm run build && (cd server && npm run dev)",
+    "start-client": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
